@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="delay_confirmation_border">#99B8E2</color>
+    <color name="grey_title_question">#A3A2A2</color>
+    <color name="green_circle_pressed">#95C11F</color>
+</resources>

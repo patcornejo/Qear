@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.QuestionFragment"
+    tools:deviceIds="wear_square">
+
+    <android.support.wearable.view.CardFrame
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:text="Muy bien!"
+                android:textColor="@color/grey"
+                android:layout_marginTop="12dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:textColor="@color/dark_grey"
+                android:maxLines="2"
+                android:fontFamily="sans-serif-light"
+                android:text="Siguiente Pregunta?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="0.5">
+
+                <android.support.wearable.view.DelayedConfirmationView
+                    android:id="@+id/delayed_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="2dp"
+                    app:circle_border_color="@color/blue"
+                    app:circle_border_width="4dp"
+                    app:circle_color="@color/white"
+                    app:circle_radius="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Preparando..."
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_grey"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.wearable.view.CardFrame>
+
+</FrameLayout>

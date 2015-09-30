@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/letter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginEnd="8dp"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:text="A"
+        android:textStyle="bold"
+        android:background="@drawable/bg_circle"/>
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Leonardo DaVinci"
+        android:maxLines="2"
+        android:textColor="@color/black_54p"
+        android:textSize="14sp"/>
+</LinearLayout>
